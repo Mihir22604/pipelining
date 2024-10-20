@@ -7,12 +7,12 @@ pipeline{
         echo "Running ${env.BUILD_ID} ${env.BUILD_DISPLAY_NAME} on ${env.NODE_NAME} and JOB ${env.JOB_NAME}"
       }
     }
-    stages('Testing'){
+    stage('Testing'){
       steps{
         echo 'Testing Stages Running...'
       }
     }
-    stages('Deploying'){
+    stage('Deploying'){
       steps{
         echo 'Deploying Stages Running...'
       }
